@@ -1,0 +1,8 @@
+c_data: 1
+c_residual: 0.1
+ddim_steps: 0
+diff_steps: 1000
+fd_acc: 2
+gov_eqs: Nematic
+residual_grad_guidance: true
+x0_estimation: mean
