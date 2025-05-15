@@ -1,0 +1,8 @@
+c_data: 1 # given for completeness but should be kept at 1.
+c_residual: 0.1 # scale factor for residual virtual likelihood, 0 corresponds to no residual likelihood
+diff_steps: 1000 # number of diffusion timesteps
+x0_estimation: 'mean' # 'mean' or 'sample'
+ddim_steps: 0 # DDIM steps, 0 corresponds to direct mapping to x1 as proposed in manuscript, only relevant if x0_estimation == 'sample'
+residual_grad_guidance: True # gradient guidance as in https://www.sciencedirect.com/science/article/pii/S0021999123000670
+gov_eqs: Nematic # governing equations under consideration, either 'darcy' or 'mechanics'
+fd_acc: 2 # accuracy of finite difference evaluation (keep at 2 to be consistent with training data), only relevant for 'darcy'
